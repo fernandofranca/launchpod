@@ -2,6 +2,10 @@
 
 LaunchPod  is a lightweight and flexible Node.js module which aims to ease the development process. Think Nodemon + REPL.
 
+<div align="center">
+    <img width=240px src="https://github.com/fernandofranca/launchpod/raw/master/artwork/icon.svg">
+</div>
+
 ## Instalation
 
 `npm install launchpod`
@@ -125,3 +129,6 @@ Set `true` for the key `watchFileChange` at your configuration file. Don't forge
 ```
 node launchpod your-app your-config-file
 ```
+
+## Credits
+Icon designed by Freepik
