@@ -3,7 +3,7 @@
 LaunchPod  is a lightweight and flexible Node.js module which aims to ease the development process. Think Nodemon + REPL.
 
 <div align="center">
-![LaunchPod](http://fernandofranca.github.io/launchpod/artwork/icon.svg)
+    <img width=240px src="http://fernandofranca.github.io/launchpod/artwork/icon.svg">
 </div>
 
 ## Instalation
