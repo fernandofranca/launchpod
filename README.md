@@ -1,8 +1,8 @@
-#LaunchPod
+# LaunchPod
 
 LaunchPod  is a lightweight and flexible Node.js module which aims to ease the development process. Think Nodemon + REPL.
 
-##Instalation
+## Instalation
 
 `npm install launchpod`
 
