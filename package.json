@@ -1,0 +1,25 @@
+{
+  "name": "launchpod",
+  "version": "1.0.0",
+  "description": "LaunchPod is a lightweight and flexible Node.js module which aims to ease the development process. Think Nodemon + REPL.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandofranca/launchpod.git"
+  },
+  "keywords": [
+    "launcher",
+    "repl",
+    "development",
+    "restart"
+  ],
+  "author": "Fernando de França",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fernandofranca/launchpod/issues"
+  },
+  "homepage": "https://github.com/fernandofranca/launchpod#readme"
+}
