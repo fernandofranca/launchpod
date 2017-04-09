@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "launchpod": "1.0.1"
+    "launchpod": "^1.0.0"
   }
 }
