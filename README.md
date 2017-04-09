@@ -12,11 +12,11 @@ LaunchPod  is a lightweight and flexible Node.js module which aims to ease the d
 
 and
 
-`node launchpod your-app.js`
+`node node_modules/launchpod your-app.js`
 
 or
 
-`node launchpod your-app your-config-file`
+`node node_modules/launchpod your-app your-config-file`
 
 ## Features
 ### REPL
@@ -59,7 +59,7 @@ Type `.help` while in REPL to list available commands.
 
 ## Configuration file reference
 
-A configuration can be specified as follows: `node launchpod your-app your-config-file`
+A configuration can be specified as follows: `node node_modules/launchpod your-app your-config-file`
 
 Config files are simple JSON files.
 
@@ -127,7 +127,7 @@ module.exports = app;
 Set `true` for the key `watchFileChange` at your configuration file. Don't forget to use the config file:
 
 ```
-node launchpod your-app your-config-file
+node node_modules/launchpod your-app your-config-file
 ```
 
 ## Credits
