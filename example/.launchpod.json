@@ -1,0 +1,8 @@
+{
+  "promptSymbol": "⚡️  ",
+  "welcomeMessage": "REPL started.\nType \".help\" to list available commands.\nType \"this\" to inspect the context.",
+  "beepOnUncaughtException": true,
+  "beforeShutdownCmd": "beforeShutdown();",
+  "watchFileChange": true,
+  "watcherThrottleTime": 2000
+}
