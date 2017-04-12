@@ -19,7 +19,7 @@ function launch(appPath, configJSONPath) {
 
 function forkNewWorker(appPath, configJSONPath) {
   if (worker) {
-    worker.disconnect(); // should disconnect to prevent "Error: IPC channel is already disconnected"
+    worker.process.removeAllListeners('message'); // remove worker process listeners to prevent "Error: IPC channel is already disconnected"
     worker.kill();
   }
 
