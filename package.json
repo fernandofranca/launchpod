@@ -1,6 +1,6 @@
 {
   "name": "launchpod",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "LaunchPod is a lightweight and flexible Node.js module which aims to ease the development process. Think Nodemon + REPL.",
   "main": "index.js",
   "scripts": {
