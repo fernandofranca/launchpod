@@ -20,20 +20,36 @@ function launch(appPath, configJSONPath) {
 function forkNewWorker(appPath, configJSONPath) {
   if (worker) {
     worker.process.removeAllListeners('message'); // remove worker process listeners to prevent "Error: IPC channel is already disconnected"
-    worker.kill();
+
+    // Waits for the exit event before forking a new worker
+    worker.once('exit', (code, signal) => {
+      _forkNewWorker(appPath, configJSONPath);
+    });
+
+    try{
+      worker.disconnect();
+      worker.kill();
+    } catch(err){ console.log(err); }
+
+    return;
   }
 
+  _forkNewWorker(appPath, configJSONPath);
+}
+
+function _forkNewWorker(appPath, configJSONPath) {
   worker = cluster.fork({appPath:appPath, configJSONPath:configJSONPath});
 
   worker.process.on('message', (msg) => {
     if (msg.type==="CMD" && msg.value==="QUIT"){
       process.exit();
+      return;
     }
 
     if (msg.type==="CMD" && msg.value==="RESTART"){
       forkNewWorker(appPath, configJSONPath);
+      return;
     }
-
   });
 }
 
