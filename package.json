@@ -21,5 +21,6 @@
   "bugs": {
     "url": "https://github.com/fernandofranca/launchpod/issues"
   },
-  "homepage": "https://github.com/fernandofranca/launchpod#readme"
+  "homepage": "https://github.com/fernandofranca/launchpod#readme",
+  "dependencies": {}
 }
